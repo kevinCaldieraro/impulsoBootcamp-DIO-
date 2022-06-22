@@ -22,7 +22,8 @@ class bankAccount {
   }
 
   deposit(value) {
-    this.balance += value;
+    this._balance += value;
+    return this._balance;
   }
 }
 
@@ -59,5 +60,6 @@ class universityAccount extends bankAccount {
     if (value > 500) return 'The value must have less than 500 dollars.';
 
     this._balance -= value;
+    return this._balance;
   }
 }
