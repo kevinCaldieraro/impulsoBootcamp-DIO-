@@ -26,3 +26,11 @@ const jesse: Student = {
   age: 21,
   subjects: ['math', 'english', 'biology', 'chemistry']
 }
+
+function list(list: string[]) {
+  for(const item of list) {
+    console.log('-', item);
+  }
+}
+
+list(jesse.subjects);

@@ -16,3 +16,9 @@ const jesse = {
     age: 21,
     subjects: ['math', 'english', 'biology', 'chemistry']
 };
+function list(list) {
+    for (const item of list) {
+        console.log('-', item);
+    }
+}
+list(jesse.subjects);
